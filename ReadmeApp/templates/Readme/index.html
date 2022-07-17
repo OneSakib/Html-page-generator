@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container-fluid">
+        <form action="{% url 'htmlpage' %}" method="post">
+            {% csrf_token %}
+            <textarea class="form-control" id="myTextarea" name="data">
+
+            <h1 style="text-align: center;">Welcome to Online HTML Page Generator</h1>
+<p>&nbsp;</p>
+<h2>Welcome to Online HTML page Generator</h2>
+<h2>Design Your page here and after design you can copy the html code</h2>
+<h2>and paste where you use.........</h2>
+
+            </textarea>
+            <button type="submit" class="btn btn-success mt-2">Get HTML Data</button>
+        </form>
+    </div>
+{% endblock %}
